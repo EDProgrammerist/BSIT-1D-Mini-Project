@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Mini Website | BSIT Student</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="logo">Qenjie<span>.dev</span></div>
+    <nav>
+      <button class="nav-btn active" onclick="showPage('home', this)">Home</button>
+      <button class="nav-btn" onclick="showPage('about', this)">About</button>
+      <button class="nav-btn" onclick="showPage('contact', this)">Contact</button>
+    </nav>
+  </header>
+
+  <!-- ========== HOME / INDEX PAGE ========== -->
+  <section id="home" class="page active">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="tag">👋 Hello, World!</span>
+        <h1>I'm <br/><span class="highlight">Qenjie</span></h1>
+        <p class="subtitle">1st Year BSIT Student • Aspiring Web Developer</p>
+        <p class="desc">Welcome to my little corner of the internet. I'm just starting my journey in IT and loving every bit of it — from writing my first HTML tag to debugging CSS at 2am.</p>
+      </div>
+      <div class="hero-media">
+        <!-- ===== YOUR PICTURE ===== -->
+        <div class="media-card img-card">
+          <div class="media-label">📸 My Photo</div>
+          <div class="placeholder-img">
+            <span class="avatar-icon">🧑‍💻</span>
+            <p>Replace this with<br/><strong>your picture</strong></p>
+            <!-- <img src="your-photo.jpg" alt="My Picture" /> -->
+          </div>
+        </div>
+
+        <!-- ===== AUDIO: Explanation of index.html ===== -->
+        <div class="media-card audio-card">
+          <div class="media-label">🎙️ Audio — About This Page</div>
+          <p class="media-hint">Upload your audio explanation of index.html below:</p>
+          <audio controls class="styled-audio">
+            <source src="audio-index.mp3" type="audio/mpeg"/>
+            <!-- Replace src with your actual audio file -->
+            Your browser does not support audio.
+          </audio>
+        </div>
+
+        <!-- ===== VIDEO: The activity before ===== -->
+        <div class="media-card video-card">
+          <div class="media-label">🎬 Video — The Activity Before</div>
+          <p class="media-hint">Embed or upload a video of the activity before:</p>
+          <div class="video-wrap">
+            <video controls width="100%">
+              <source src="activity-before.mp4" type="video/mp4"/>
+              <!-- Replace src with your actual video file -->
+            </video>
+            <!-- OR use YouTube embed:
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              allowfullscreen></iframe> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT PAGE ========== -->
+  <section id="about" class="page">
+    <div class="page-header">
+      <span class="tag">✨ Get to know me</span>
+      <h2>About <span class="highlight">Me</span></h2>
+      <p class="subtitle">Hobbies, interests & a bit of sci-fi</p>
+    </div>
+
+    <div class="cards-row">
+      <!-- ===== IMAGE: Your Hobby ===== -->
+      <div class="media-card img-card">
+        <div class="media-label">🖼️ My Hobby</div>
+        <div class="placeholder-img hobby">
+          <span class="avatar-icon">🎮</span>
+          <p>Replace with a photo of<br/><strong>your hobby</strong></p>
+          <!-- <img src="hobby.jpg" alt="My Hobby" /> -->
+        </div>
+        <p class="caption">I love <strong>gaming</strong> — it's how I unwind after long coding sessions. It also sparked my interest in game development!</p>
+      </div>
+
+      <!-- ===== AUDIO: Explanation of about.html ===== -->
+      <div class="media-card audio-card">
+        <div class="media-label">🎙️ Audio — About This Page</div>
+        <p class="media-hint">Upload your audio explanation of about.html below:</p>
+        <audio controls class="styled-audio">
+          <source src="audio-about.mp3" type="audio/mpeg"/>
+          Your browser does not support audio.
+        </audio>
+        <p class="caption">A quick voice note introducing what you'll find on this page.</p>
+      </div>
+
+      <!-- ===== VIDEO: Sci-fi Movie ===== -->
+      <div class="media-card video-card">
+        <div class="media-label">🚀 Video — Favorite Sci-fi Movie</div>
+        <p class="media-hint">Embed a trailer or clip of your favorite sci-fi movie:</p>
+        <div class="video-wrap">
+          <!-- Example: Interstellar trailer on YouTube -->
+          <iframe
+            src="https://www.youtube.com/embed/zSWdZVtXT7E"
+            title="Sci-fi Movie"
+            allowfullscreen>
+          </iframe>
+          <!-- Replace with your own video or YouTube embed -->
+        </div>
+        <p class="caption">My all-time favorite: <em>Interstellar</em> — it made me want to study more about AI and space tech.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT PAGE ========== -->
+  <section id="contact" class="page">
+    <div class="page-header">
+      <span class="tag">📬 Let's connect</span>
+      <h2>Contact <span class="highlight">Me</span></h2>
+      <p class="subtitle">My favorite place & how to reach me</p>
+    </div>
+
+    <div class="cards-row">
+      <!-- ===== IMAGE: Your Favorite Place ===== -->
+      <div class="media-card img-card">
+        <div class="media-label">🌅 My Favorite Place</div>
+        <div class="placeholder-img fav-place">
+          <span class="avatar-icon">🏖️</span>
+          <p>Replace with a photo of<br/><strong>your favorite place</strong></p>
+          <!-- <img src="favorite-place.jpg" alt="My Favorite Place" /> -->
+        </div>
+        <p class="caption">Boracay is my happy place — the white sand and clear water just hits different after a stressful week of coding!</p>
+      </div>
+
+      <!-- ===== AUDIO: Explanation of contact.html ===== -->
+      <div class="media-card audio-card">
+        <div class="media-label">🎙️ Audio — About This Page</div>
+        <p class="media-hint">Upload your audio explanation of contact.html:</p>
+        <audio controls class="styled-audio">
+          <source src="audio-contact.mp3" type="audio/mpeg"/>
+          Your browser does not support audio.
+        </audio>
+        <p class="caption">A short voice note telling visitors how to reach me.</p>
+      </div>
+
+      <!-- ===== VIDEO: Life of IT Students ===== -->
+      <div class="media-card video-card wide">
+        <div class="media-label">🎓 Video — Life of an IT Student</div>
+        <p class="media-hint">Embed your reel or TikTok about IT student life:</p>
+        <div class="video-wrap">
+          <video controls width="100%">
+            <source src="it-student-life.mp4" type="video/mp4"/>
+          </video>
+          <!-- OR TikTok embed:
+          <blockquote class="tiktok-embed"
+            cite="https://www.tiktok.com/@user/video/ID"
+            data-video-id="ID">
+          </blockquote>
+          <script async src="https://www.tiktok.com/embed.js"></script>
+          -->
+        </div>
+      </div>
+
+      <!-- ===== CONTACT FORM ===== -->
+      <div class="media-card contact-form-card">
+        <div class="media-label">✉️ Send me a message</div>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="4" placeholder="Type your message here..."></textarea>
+        </div>
+        <button class="send-btn">Send Message 🚀</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>Made with ❤️ by <strong>Qenjie</strong> | 1st Year BSIT</p>
+    <p class="footer-tech">HTML • CSS • Passion</p>
+  </footer>
+
+  <script>
+    function showPage(pageId, btn) {
+      // Hide all pages
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      // Deactivate all nav buttons
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      // Show selected page
+      document.getElementById(pageId).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>
